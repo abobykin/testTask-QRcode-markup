@@ -1,0 +1,42 @@
+body {
+  background-color: #d1dcec;
+  font-size: 15px;
+  font-family: Outfit;
+  color: black;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.qr-code-block {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 320px;
+  background-color: white;
+  border-radius: 18px;
+  padding: 18px 18px 30px;
+  text-align: center;
+}
+
+.qr-code-block img {
+  max-width: 100%;
+  border-radius: 9px;
+}
+
+.qr-code-block strong {
+  display: block;
+  color: black;
+  margin: 20px 0 15px;
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+.qr-code-block figcaption {
+  color: #797b87;
+  padding: 0 10px;
+}
