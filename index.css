@@ -3,18 +3,21 @@ body {
   font-size: 15px;
   font-family: Outfit;
   color: black;
+  margin: 0;
 }
 
 body * {
   box-sizing: border-box;
 }
 
+main {
+  position: relative;
+  display: flex;
+  vertical-align: middle;
+  min-height: 100vh;
+}
+
 .qr-code-block {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  right: 0;
   margin: auto;
   max-width: 320px;
   background-color: white;
@@ -28,15 +31,13 @@ body * {
   border-radius: 9px;
 }
 
-.qr-code-block strong {
-  display: block;
-  color: black;
-  margin: 20px 0 15px;
-  padding: 0 20px;
-  font-size: 20px;
-}
-
 .qr-code-block figcaption {
   color: #797b87;
   padding: 0 10px;
+}
+
+.qr-code-block figcaption h1 {
+  color: black;
+  margin: 20px 0 15px;
+  font-size: 20px;
 }
